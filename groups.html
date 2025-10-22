@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Groups | Help Connect</title>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="css/layout.css"/>
+  <link rel="stylesheet" href="css/theme.css"/>
+  <link rel="stylesheet" href="css/groups.css"/>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <h1>Help Connect</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="post-help.html">Post Help</a>
+      <a href="support-replies.html">Support</a>
+      <a href="groups.html" class="active">Groups</a>
+      <a href="updates.html">Updates</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <!-- TOOLBAR -->
+  <section class="toolbar">
+    <div class="toolbar-head">
+      <h2>Groups Hub</h2>
+      <button id="openCreateModal" class="btn-primary">Share an Update</button>
+    </div>
+    <div class="filters">
+      <select id="filterType" aria-label="Filter by type">
+        <option value="">All types</option>
+        <option value="Event">Event</option>
+        <option value="Job">Job</option>
+        <option value="Health">Health</option>
+      </select>
+
+      <input id="filterLocation" type="text" placeholder="Location (e.g., Lagos)" aria-label="Filter by location"/>
+      <input id="filterFromDate" type="date" aria-label="From date"/>
+      <input id="filterToDate" type="date" aria-label="To date"/>
+
+      <input id="searchInput" type="search" placeholder="Search title, group, details…" aria-label="Search"/>
+      <button id="clearFilters" class="btn-secondary" type="button">Clear</button>
+    </div>
+  </section>
+
+  <!-- LIST -->
+  <main id="groupList" class="group-list" aria-live="polite">
+    <!-- JS renders cards here -->
+  </main>
+
+  <!-- CREATE MODAL -->
+  <div id="createModal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="createTitle">
+    <div class="modal-content">
+      <button class="modal-close" id="closeCreateModal" aria-label="Close">×</button>
+      <h3 id="createTitle">Share to Groups</h3>
+      <form id="createForm">
+        <label for="gType">Type</label>
+        <select id="gType" name="type" required>
+          <option value="">Select type</option>
+          <option value="Event">Event</option>
+          <option value="Job">Job</option>
+          <option value="Health">Health</option>
+        </select>
+
+        <label for="gTitle">Title</label>
+        <input id="gTitle" name="title" type="text" placeholder="e.g., Free Vaccination Drive" required/>
+
+        <label for="gGroup">Group / Organization</label>
+        <input id="gGroup" name="group" type="text" placeholder="e.g., Central Clinic Outreach" required/>
+
+        <div class="row-2">
+          <div>
+            <label for="gDate">Date</label>
+            <input id="gDate" name="date" type="date"/>
+          </div>
+          <div>
+            <label for="gLocation">Location</label>
+            <input id="gLocation" name="location" type="text" placeholder="City / Venue"/>
+          </div>
+        </div>
+
+        <label for="gDetails">Details</label>
+        <textarea id="gDetails" name="details" placeholder="What should people know?" required></textarea>
+
+        <label for="gContact">Contact (email or phone)</label>
+        <input id="gContact" name="contact" type="text" placeholder="e.g., clinic@health.org / 0803…"/>
+
+        <button type="submit" class="btn-primary">Publish</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- JS -->
+  <script src="js/groups.js"></script>
+</body>
+</html>

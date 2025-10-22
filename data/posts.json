@@ -1,0 +1,23 @@
+[
+  {
+    "id": "p1",
+    "title": "Need help with groceries",
+    "description": "I’m caring for my mom and can’t get to the market this week.",
+    "category": "Financial Support",
+    "contact": "chioma@example.com"
+  },
+  {
+    "id": "p2",
+    "title": "Looking for entry-level IT job",
+    "description": "Fresh graduate seeking internship or junior role.",
+    "category": "Job Opportunity",
+    "contact": "0803-000-0000"
+  },
+  {
+    "id": "p3",
+    "title": "Free blood pressure checks",
+    "description": "Community event at Local Clinic on Saturday 10am–2pm.",
+    "category": "Community Event",
+    "contact": "clinic@health.org"
+  }
+]

@@ -1,0 +1,58 @@
+/* Base */
+body { font-family:'Poppins',sans-serif; margin:0; background:#f8fafc; color:#333; }
+
+/* Header */
+header {
+  background:#1e88e5; color:#fff; padding:20px 10%;
+  display:flex; justify-content:space-between; align-items:center;
+}
+header h1 { margin:0; font-size:1.6em; }
+nav a { color:#fff; text-decoration:none; margin-left:20px; font-weight:500; }
+nav a:hover { text-decoration:underline; }
+nav a.active { text-decoration:underline; font-weight:600; }
+
+/* Toolbar */
+.toolbar { padding:30px 10%; }
+.toolbar h2 { margin:0 0 12px; color:#1e88e5; }
+.filters { display:flex; gap:12px; flex-wrap:wrap; }
+.filters select, .filters input {
+  padding:10px 12px; border:1px solid #cbd5e1; border-radius:8px; background:#fff;
+  min-width:150px;
+}
+.btn-secondary { padding:10px 16px; border:1px solid #cbd5e1; background:#fff; border-radius:30px; cursor:pointer; }
+.btn-secondary:hover { background:#f1f5f9; }
+
+/* Feed */
+.feed { padding: 10px 10% 60px; display:grid; gap:16px; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); }
+.card {
+  background:#fff; border-radius:12px; box-shadow:0 3px 10px rgba(0,0,0,.06);
+  padding:18px; display:flex; flex-direction:column; gap:8px;
+}
+.badge {
+  display:inline-flex; gap:8px; align-items:center;
+}
+.badge .pill {
+  display:inline-block; font-size:.85em; padding:4px 10px; border-radius:20px;
+  background:#e2e8f0; color:#0f172a;
+}
+.card h4 { margin:2px 0 0; color:#1e88e5; }
+.meta { font-size:.9em; color:#64748b; display:flex; gap:10px; flex-wrap:wrap; }
+.content { margin:4px 0 0; }
+.contact, .location { font-size:.9em; color:#475569; }
+.actions { display:flex; justify-content:space-between; align-items:center; margin-top:8px; }
+.btn-primary {
+  background:#1e88e5; color:#fff; border:none; padding:8px 14px; border-radius:24px; cursor:pointer;
+}
+.btn-primary:hover { background:#1565c0; }
+.icon-btn {
+  background:#fff; border:1px solid #cbd5e1; padding:8px 12px; border-radius:24px; cursor:pointer;
+}
+.icon-btn.active { border-color:#1e88e5; color:#1e88e5; }
+
+/* Responsive */
+@media (max-width: 760px) {
+  header { flex-direction:column; text-align:center; }
+  nav a { display:inline-block; margin:8px; }
+  .toolbar { padding:22px 6%; }
+  .feed { padding:10px 6% 40px; grid-template-columns:1fr; }
+}

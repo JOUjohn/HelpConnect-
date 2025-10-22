@@ -1,0 +1,32 @@
+[
+  {
+    "id": "g1",
+    "type": "Health",
+    "title": "Free Vaccination Drive",
+    "group": "Central Clinic Outreach",
+    "date": "2025-11-01T00:00:00.000Z",
+    "location": "Ikeja, Lagos",
+    "details": "MMR and tetanus boosters available. Bring ID if possible.",
+    "contact": "clinic@health.org"
+  },
+  {
+    "id": "g2",
+    "type": "Job",
+    "title": "Junior Frontend Developer (Intern)",
+    "group": "GreenTech Solutions",
+    "date": "2025-11-08T00:00:00.000Z",
+    "location": "Remote / Lagos",
+    "details": "HTML/CSS/JS required. Stipend provided.",
+    "contact": "jobs@greentech.ng"
+  },
+  {
+    "id": "g3",
+    "type": "Event",
+    "title": "Community Clean-Up",
+    "group": "Youth Action Group",
+    "date": "2025-11-03T00:00:00.000Z",
+    "location": "Ajah Waterfront",
+    "details": "Gloves and bags provided. Meet 8:00 AM at the main gate.",
+    "contact": "0803-000-0000"
+  }
+]

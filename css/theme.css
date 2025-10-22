@@ -1,0 +1,42 @@
+/* THEME TOKENS (colors, radii, shadow, spacing) */
+:root{
+  --brand-700:#1565c0;
+  --brand-600:#1e88e5;
+  --brand-500:#42a5f5;
+  --ink-900:#0f172a;
+  --ink-700:#334155;
+  --ink-600:#475569;
+  --ink-500:#64748b;
+  --bg:#f8fafc;
+  --surface:#ffffff;
+  --surface-2:#f1f5f9;
+  --border:#cbd5e1;
+
+  --radius-lg:12px;
+  --radius-pill:999px;
+
+  --shadow-sm:0 3px 8px rgba(0,0,0,.08);
+  --shadow-md:0 6px 18px rgba(0,0,0,.12);
+
+  --space-1:6px;
+  --space-2:10px;
+  --space-3:16px;
+  --space-4:22px;
+  --space-5:32px;
+}
+
+/* Dark mode (optional) */
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#0b1220;
+    --surface:#0e172a;
+    --surface-2:#0b1530;
+    --ink-900:#e2e8f0;
+    --ink-700:#cbd5e1;
+    --ink-600:#94a3b8;
+    --ink-500:#7c8aa5;
+    --border:#1f2a44;
+    --shadow-sm:0 2px 8px rgba(0,0,0,.5);
+    --shadow-md:0 6px 18px rgba(0,0,0,.5);
+  }
+}

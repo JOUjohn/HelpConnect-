@@ -1,0 +1,29 @@
+/* Contact page */
+.contact-hero{
+  padding:72px 10%;
+  text-align:center;
+  color:#fff;
+  background:linear-gradient(90deg,var(--brand-600),var(--brand-500));
+}
+.contact-hero h2{ margin:0 0 8px; font-size:2rem }
+.contact-hero p{ margin:0; opacity:.95 }
+
+.contact-card{ max-width:900px; margin:24px auto; }
+
+.row-2{ display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+.muted{ color:var(--ink-600); font-size:.95rem; }
+
+.actions{ display:flex; gap:10px; margin-top:12px; }
+
+.err{ color:#b42318; font-size:.85rem; min-height:1.1em; display:block; }
+
+.hp{ position:absolute; left:-9999px; opacity:0; height:0; width:0; }
+
+/* Modal action buttons */
+.modal .actions{ display:flex; gap:10px; margin-top:10px; }
+
+/* Responsive */
+@media (max-width:780px){
+  .contact-hero{ padding:54px 6%; }
+  .row-2{ grid-template-columns:1fr; }
+}

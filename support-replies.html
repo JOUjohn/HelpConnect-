@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Support & Replies | Help Connect</title>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="css/layout.css"/>
+  <link rel="stylesheet" href="css/theme.css"/>
+  <link rel="stylesheet" href="css/support-replies.css"/>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <h1>Help Connect</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="post-help.html">Post Help</a>
+      <a href="support-replies.html" class="active">Support</a>
+      <a href="groups.html">Groups</a>
+      <a href="updates.html">Updates</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <!-- FILTERS -->
+  <section class="toolbar">
+    <h2>Offer Support</h2>
+    <div class="filters">
+      <select id="filterCategory" aria-label="Filter by category">
+        <option value="">All categories</option>
+        <option>Financial Support</option>
+        <option>Health Assistance</option>
+        <option>Job Opportunity</option>
+        <option>Emotional Support</option>
+        <option>Community Event</option>
+        <option>Other</option>
+      </select>
+      <input id="searchInput" type="search" placeholder="Search posts…" aria-label="Search posts"/>
+      <button id="clearFilters" class="btn-secondary" type="button">Clear</button>
+    </div>
+  </section>
+
+  <!-- POSTS LIST -->
+  <main id="postsList" class="posts-list" aria-live="polite">
+    <!-- JS will render cards here -->
+  </main>
+
+  <!-- REPLY MODAL -->
+  <div id="replyModal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="replyTitle">
+    <div class="modal-content">
+      <button class="modal-close" id="closeModal" aria-label="Close">×</button>
+      <h3 id="replyTitle">Offer Support</h3>
+      <p class="modal-post-title" id="modalPostTitle"></p>
+      <form id="replyForm">
+        <input type="hidden" id="postId"/>
+        <label for="name">Your name</label>
+        <input id="name" name="name" type="text" placeholder="e.g., Aisha" required/>
+
+        <label for="contact">Contact (email or phone)</label>
+        <input id="contact" name="contact" type="text" placeholder="e.g., aisha@example.com" required/>
+
+        <label for="message">Your message</label>
+        <textarea id="message" name="message" placeholder="How can you help?" required></textarea>
+
+        <button type="submit" class="btn-primary">Send Reply</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- JS -->
+  <script src="js/replies.js"></script>
+</body>
+</html>

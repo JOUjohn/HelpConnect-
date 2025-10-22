@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Community Updates | Help Connect</title>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="css/layout.css"/>
+  <link rel="stylesheet" href="css/theme.css"/>
+  <link rel="stylesheet" href="css/updates.css"/>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <h1>Help Connect</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="post-help.html">Post Help</a>
+      <a href="support-replies.html">Support</a>
+      <a href="groups.html">Groups</a>
+      <a href="updates.html" class="active">Updates</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <!-- TOOLBAR -->
+  <section class="toolbar">
+    <h2>Community Feed</h2>
+    <div class="filters">
+      <select id="filterKind" aria-label="Filter by item type">
+        <option value="">All items</option>
+        <option value="Post">Help Posts</option>
+        <option value="Group">Group Shares</option>
+      </select>
+
+      <select id="filterCategory" aria-label="Post category (when Kind=Post)">
+        <option value="">All Post Categories</option>
+        <option>Financial Support</option>
+        <option>Health Assistance</option>
+        <option>Job Opportunity</option>
+        <option>Emotional Support</option>
+        <option>Community Event</option>
+        <option>Other</option>
+      </select>
+
+      <select id="filterGroupType" aria-label="Group type (when Kind=Group)">
+        <option value="">All Group Types</option>
+        <option value="Event">Event</option>
+        <option value="Job">Job</option>
+        <option value="Health">Health</option>
+      </select>
+
+      <input id="searchInput" type="search" placeholder="Search title, details, location…"/>
+      <input id="fromDate" type="date" aria-label="From date"/>
+      <input id="toDate" type="date" aria-label="To date"/>
+
+      <select id="sortBy" aria-label="Sort">
+        <option value="newest">Newest first</option>
+        <option value="oldest">Oldest first</option>
+      </select>
+
+      <button id="clearFilters" class="btn-secondary" type="button">Clear</button>
+    </div>
+  </section>
+
+  <!-- FEED -->
+  <main id="feed" class="feed" aria-live="polite">
+    <!-- JS renders items -->
+  </main>
+
+  <!-- JS -->
+  <script src="js/updates.js"></script>
+</body>
+</html>

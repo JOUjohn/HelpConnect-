@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact | Help Connect</title>
+
+  <!-- Shared styles -->
+  <link rel="stylesheet" href="css/theme.css"/>
+  <link rel="stylesheet" href="css/layout.css"/>
+
+  <!-- Page styles -->
+  <link rel="stylesheet" href="css/contact.css"/>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <h1>Help Connect</h1>
+    <nav class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="post-help.html">Post Help</a>
+      <a href="support-replies.html">Support</a>
+      <a href="groups.html">Groups</a>
+      <a href="updates.html">Updates</a>
+      <a class="active" href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="contact-hero">
+    <h2>We’re listening</h2>
+    <p>Questions, feedback, or partnerships—drop us a line and our team will get back to you.</p>
+  </section>
+
+  <!-- Form -->
+  <main class="container">
+    <section class="card contact-card">
+      <form id="contactForm" novalidate aria-describedby="contactHelp">
+        <!-- Spam trap (hidden) -->
+        <input type="text" name="company" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true"/>
+
+        <div class="row-2">
+          <div>
+            <label for="name">Your name</label>
+            <input id="name" name="name" type="text" placeholder="e.g., Aisha Bello" required>
+            <small class="err" data-err="name"></small>
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required>
+            <small class="err" data-err="email"></small>
+          </div>
+        </div>
+
+        <div class="row-2">
+          <div>
+            <label for="topic">Topic</label>
+            <select id="topic" name="topic" required>
+              <option value="">Choose a topic</option>
+              <option>General Question</option>
+              <option>Report a Post</option>
+              <option>Partnership</option>
+              <option>Press/Media</option>
+              <option>Other</option>
+            </select>
+            <small class="err" data-err="topic"></small>
+          </div>
+          <div>
+            <label for="subject">Subject</label>
+            <input id="subject" name="subject" type="text" placeholder="Short summary" required>
+            <small class="err" data-err="subject"></small>
+          </div>
+        </div>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Tell us how we can help…" required></textarea>
+        <small class="err" data-err="message"></small>
+
+        <label for="file">Attachment (optional)</label>
+        <input id="file" name="file" type="file" accept="image/*,.pdf,.doc,.docx,.txt"/>
+
+        <p id="contactHelp" class="muted">We aim to respond within 1–2 business days.</p>
+
+        <div class="actions">
+          <button type="submit" class="btn btn-primary">Send message</button>
+          <a class="btn btn-secondary" href="index.html">Back to Home</a>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <!-- Thank-you Modal -->
+  <div id="contactThanks" class="modal" aria-hidden="true" role="dialog" aria-labelledby="thanksTitle">
+    <div class="modal-content">
+      <button class="modal-close" id="closeThanks" aria-label="Close">×</button>
+      <h3 id="thanksTitle">Thank you! 🎉</h3>
+      <p>Your message has been received. We’ll reach out if we need more details.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="updates.html">See Community Updates</a>
+        <a class="btn btn-secondary" href="post-help.html">Post Help</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>

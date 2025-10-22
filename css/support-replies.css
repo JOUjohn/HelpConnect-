@@ -1,0 +1,86 @@
+/* Base */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background: #f8fafc;
+  color: #333;
+}
+
+/* Header */
+header {
+  background: #1e88e5;
+  color: #fff;
+  padding: 20px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header h1 { margin: 0; font-size: 1.6em; }
+nav a { color:#fff; text-decoration:none; margin-left:20px; font-weight:500; }
+nav a:hover { text-decoration:underline; }
+nav a.active { text-decoration:underline; font-weight:600; }
+
+/* Toolbar */
+.toolbar { padding: 30px 10%; }
+.toolbar h2 { margin: 0 0 15px; color:#1e88e5; }
+.filters {
+  display:flex; gap:12px; flex-wrap:wrap;
+}
+.filters select, .filters input {
+  padding: 10px 12px; border:1px solid #cbd5e1; border-radius:8px; background:#fff;
+}
+.btn-secondary {
+  padding: 10px 16px; border:1px solid #cbd5e1; background:#fff; border-radius:30px; cursor:pointer;
+}
+.btn-secondary:hover { background:#f1f5f9; }
+
+/* Posts List */
+.posts-list { padding: 10px 10% 60px; display:grid; gap:16px; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); }
+.post-card {
+  background:#fff; border-radius:12px; box-shadow:0 3px 10px rgba(0,0,0,.06);
+  padding:18px; display:flex; flex-direction:column; gap:10px;
+}
+.post-card h4 { margin:0; color:#1e88e5; }
+.meta { font-size:.9em; color:#64748b; display:flex; gap:10px; flex-wrap:wrap; }
+.post-card p { margin:4px 0 0; }
+.actions { display:flex; justify-content:space-between; align-items:center; margin-top:10px; }
+.btn-primary {
+  background:#1e88e5; color:#fff; border:none; padding:10px 16px; border-radius:30px; cursor:pointer;
+}
+.btn-primary:hover { background:#1565c0; }
+.reply-count { font-size:.9em; color:#475569; }
+
+/* Reply list inside card */
+.reply-list { margin-top:10px; border-top:1px dashed #e2e8f0; padding-top:10px; display:none; }
+.reply-item { background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px; padding:10px; margin-bottom:8px; }
+.reply-item .by { font-weight:600; }
+.toggle-replies { background:none; border:none; color:#1e88e5; cursor:pointer; padding:0; }
+
+/* Modal */
+.modal {
+  position:fixed; inset:0; background:rgba(0,0,0,.5);
+  display:none; align-items:center; justify-content:center; z-index:1000;
+}
+.modal-content {
+  background:#fff; border-radius:12px; padding:22px; width:min(520px, 92vw);
+  box-shadow:0 10px 30px rgba(0,0,0,.15); position:relative;
+}
+.modal-close {
+  position:absolute; top:8px; right:10px; border:none; background:transparent; font-size:22px; cursor:pointer;
+}
+.modal-post-title { color:#334155; margin-top:-6px; margin-bottom:10px; }
+
+/* Form */
+label { display:block; font-weight:600; margin-top:10px; }
+input, textarea {
+  width:100%; padding:12px; border:1px solid #cbd5e1; border-radius:8px; box-sizing:border-box; margin-top:6px;
+}
+textarea { min-height:110px; resize:vertical; }
+
+/* Responsive */
+@media (max-width: 720px) {
+  header { flex-direction:column; text-align:center; }
+  nav a { display:inline-block; margin:8px; }
+  .toolbar { padding: 22px 6%; }
+  .posts-list { padding: 10px 6% 40px; }
+}
