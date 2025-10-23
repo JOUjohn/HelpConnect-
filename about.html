@@ -5,24 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>About | Help Connect</title>
 
-  <!-- Shared styles -->
+  <!-- Shared Styles -->
   <link rel="stylesheet" href="css/theme.css"/>
   <link rel="stylesheet" href="css/layout.css"/>
+  <link rel="stylesheet" href="css/about.css"/>
 
-  <!-- (Optional) Page-specific tweaks -->
-  <style>
-    .about-hero{padding:72px 10%;text-align:center;color:#fff;background:linear-gradient(90deg,var(--brand-600),var(--brand-500));}
-    .about-hero h2{margin:0 0 10px;font-size:2.2rem}
-    .about-hero p{max-width:820px;margin:0 auto 14px;opacity:.95}
-    .pill{display:inline-block;padding:4px 12px;border-radius:999px;background:#fff;color:var(--brand-700);font-weight:600}
-    .grid-3{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
-    .card.icon h4{display:flex;align-items:center;gap:.5rem}
-  </style>
-
+  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
-  <!-- Header -->
+  <!-- HEADER -->
   <header class="site-header">
     <h1>Help Connect</h1>
     <nav class="site-nav">
@@ -32,70 +25,68 @@
       <a href="groups.html">Groups</a>
       <a href="updates.html">Updates</a>
       <a class="active" href="about.html">About</a>
+      <a href="contact.html">Contact</a>
     </nav>
   </header>
 
-  <!-- Hero -->
+  <!-- HERO -->
   <section class="about-hero">
     <span class="pill">Our Mission</span>
     <h2>Together, we make help happen.</h2>
     <p>
-      Help Connect is a community platform where people share needs, offer support, post
-      opportunities, and stay informed — safely and respectfully.
+      Help Connect is a community platform where people share needs, offer support, 
+      post opportunities, and stay informed — safely and respectfully.
     </p>
   </section>
 
-  <!-- What is Help Connect -->
+  <!-- MAIN CONTENT -->
   <main class="container">
     <section class="stack-lg">
       <h3 class="section-title">What is Help Connect?</h3>
       <div class="grid-3">
         <article class="card icon">
           <h4>📝 Post What You Need</h4>
-          <p>Share a clear title, description, category and contact so the right people can help fast.</p>
+          <p>Share a clear title, description, and category so the right people can help quickly.</p>
         </article>
         <article class="card icon">
           <h4>💬 Get Support</h4>
-          <p>Community members reply with offers, resources, guidance or connections.</p>
+          <p>Community members reply with offers, resources, or guidance you might need.</p>
         </article>
         <article class="card icon">
           <h4>👥 Group Sharing</h4>
-          <p>Groups share events, jobs and health info to keep everyone connected and safe.</p>
+          <p>Groups share events, jobs, and health updates to keep everyone informed and connected.</p>
         </article>
       </div>
     </section>
 
-    <!-- Principles -->
     <section class="stack-lg">
       <h3 class="section-title">Our Principles</h3>
       <div class="card-list">
         <article class="card">
           <h4>Safety & Respect</h4>
-          <p>Real people, real help — with clear boundaries and zero tolerance for abuse.</p>
+          <p>Every post and reply follows community guidelines to maintain a trusted environment.</p>
         </article>
         <article class="card">
           <h4>Transparency</h4>
-          <p>Simple posting and replying. You control what you share and who contacts you.</p>
+          <p>You control what you share, who can see it, and when you connect directly.</p>
         </article>
         <article class="card">
           <h4>Local Impact</h4>
-          <p>Connect neighbors, volunteers, NGOs, and groups to solve problems quickly.</p>
+          <p>Connecting people and groups nearby helps real change happen faster.</p>
         </article>
       </div>
     </section>
 
-    <!-- How it works steps -->
     <section class="stack-lg">
-      <h3 class="section-title">How it works</h3>
+      <h3 class="section-title">How It Works</h3>
       <ol class="steps">
-        <li><strong>Create a post</strong> describing the help you need.</li>
-        <li><strong>Community replies</strong> with support or useful info.</li>
-        <li><strong>Follow updates</strong> from groups: events, jobs, health alerts.</li>
-        <li><strong>Close the loop</strong> by marking solved or thanking supporters.</li>
+        <li><strong>Create a post</strong> describing what help you need.</li>
+        <li><strong>Receive replies</strong> from people and organizations nearby.</li>
+        <li><strong>Follow updates</strong> and find new opportunities in your community.</li>
+        <li><strong>Give back</strong> when you can — every small act helps.</li>
       </ol>
     </section>
 
-    <!-- Contact / CTA -->
     <section class="cta card">
       <h4>Have feedback or want to partner?</h4>
       <p>Email: <a href="mailto:hello@helpconnect.org">hello@helpconnect.org</a></p>
@@ -106,9 +97,12 @@
     </section>
   </main>
 
-  <!-- Footer -->
+  <!-- FOOTER -->
   <footer class="site-footer">
     © 2025 Help Connect — Empowering Communities to Help Each Other 💙
   </footer>
+
+  <!-- Shared Script for header toggle -->
+  <script src="js/main.js"></script>
 </body>
 </html>

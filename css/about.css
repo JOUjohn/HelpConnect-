@@ -1,0 +1,28 @@
+.about-hero {
+  padding: 72px 10%;
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(90deg, var(--brand-600), var(--brand-500));
+}
+.about-hero h2 { margin: 10px 0; font-size: 2rem; }
+.about-hero p { max-width: 800px; margin: 0 auto; opacity: .95; }
+
+.pill {
+  display: inline-block;
+  background: #fff;
+  color: var(--brand-700);
+  font-weight: 600;
+  border-radius: var(--radius-pill);
+  padding: 4px 12px;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 18px;
+}
+.card.icon h4 { display: flex; align-items: center; gap: .5rem; }
+
+@media (max-width:780px){
+  .about-hero { padding: 54px 6%; }
+}
