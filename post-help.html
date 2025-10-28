@@ -5,39 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Post Help | Help Connect</title>
 
-  <!-- External Styles -->
-  <link rel="stylesheet" href="css/layout.css">
+  <!-- Shared styles -->
   <link rel="stylesheet" href="css/theme.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <!-- Page styles -->
   <link rel="stylesheet" href="css/post-help.css">
-
-  <!-- Google Fonts -->
+  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
-
 <body>
-
-  <!-- HEADER -->
-  <header>
+  <!-- HEADER (unified) -->
+  <header class="site-header">
     <h1>Help Connect</h1>
-    <nav>
+    <nav class="site-nav">
       <a href="index.html">Home</a>
-      <a href="post-help.html" class="active">Post Help</a>
+      <a class="active" href="post-help.html">Post Help</a>
       <a href="support-replies.html">Support</a>
       <a href="groups.html">Groups</a>
       <a href="updates.html">Updates</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
     </nav>
   </header>
 
   <!-- FORM -->
   <div class="form-container">
     <h2>Post What You Need Help With</h2>
-
     <form id="helpForm" onsubmit="return showPopup(event)">
       <label for="title">Title</label>
       <input type="text" id="title" name="title" placeholder="e.g., Need help with groceries" required>
 
       <label for="description">Description</label>
-      <textarea id="description" name="description" placeholder="Describe what kind of help or support you need..." required></textarea>
+      <textarea id="description" name="description" placeholder="Describe what kind of help you need..." required></textarea>
 
       <label for="category">Category</label>
       <select id="category" name="category" required>
@@ -64,13 +63,13 @@
   <div id="popup" class="popup">
     <div class="popup-content">
       <h3>✅ Help Request Submitted!</h3>
-      <p>Thank you for sharing. Your request has been posted successfully.<br>
-         Others can now see and offer support.</p>
+      <p>Your request has been posted successfully.</p>
       <button onclick="closePopup()">OK</button>
     </div>
   </div>
 
-  <!-- SCRIPT -->
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
   <script src="js/post.js"></script>
 </body>
 </html>
